@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/sixthFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/summer"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#F6F5F5"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="CONTACT US"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="38sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:textColorLink="@color/black"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Subject"
+            android:background="#CC000000"
+            android:inputType="text"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ffffff"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#CC000000"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Message"
+            android:inputType="text"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            />
+
+        <Spinner
+            android:id="@+id/food_sp"
+            android:layout_width="3dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="130dp"
+            android:scrollbarSize="6dp" />
+
+        <Button
+
+            android:id="@+id/ask"
+            android:layout_width="163dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="115dp"
+            android:background="@drawable/btn_round"
+            app:backgroundTint="#CC546CF6"
+            android:text="ASK!"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/summer"
+        tools:context=".HomeFragment"
+        >
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="230dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#A6546CF6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/howto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/howto"
+            android:layout_width="230dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:text="How To Use"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="#A6546CF6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/howto"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="396dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="100dp"
+            android:text="Food Share 🥗"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.603"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/fooddonarBtn"
+            android:layout_width="230dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:text="Food Donor"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="#A6546CF6"
+            app:layout_constraintBottom_toTopOf="@+id/foodRecipentBtn"
+            app:layout_constraintEnd_toEndOf="@+id/foodRecipentBtn"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/foodRecipentBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <Button
+            android:id="@+id/foodRecipentBtn"
+            android:layout_width="230dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/btn_round"
+            android:gravity="center"
+            android:text="Reciever"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#A6546CF6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fooddonarBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

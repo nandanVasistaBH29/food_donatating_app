@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443809105538",
+    "project_id": "foodshare-c1180",
+    "storage_bucket": "foodshare-c1180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443809105538:android:18f809ddd311f9ab5f569b",
+        "android_client_info": {
+          "package_name": "bd.edu.rifat.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443809105538-6dlbnckuqfdm1m646ti0lbukgod8hvk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBN9LSob_QV2PqdnkmmWWoL5wEYF1iuqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443809105538-6dlbnckuqfdm1m646ti0lbukgod8hvk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
