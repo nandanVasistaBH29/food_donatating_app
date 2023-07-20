@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cedarville_cursive</item>
+        <item>@font/dr_sugiyama</item>
+        <item>@font/kaushan_script</item>
+        <item>@font/life_savers_bold</item>
+        <item>@font/nunito_sans_light</item>
+        <item>@font/pacifico</item>
+        <item>@font/ruthie</item>
+    </array>
+</resources>

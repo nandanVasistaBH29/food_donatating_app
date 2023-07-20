@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/summer"
+
+        tools:context=".SecondFragment">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/* NOTICE: Please Donate Packed Food Only. */"
+            android:textAlignment="center"
+            android:textColor="#ffffce"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:background="#CC000000"
+            android:ems="10"
+            android:hint="Donor Name"
+            android:inputType="textPersonName"
+            android:minHeight="52dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="#ffffff"
+            android:textColorLink="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/age_et"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/age_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/age_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Quantity (min 5)"
+            android:textAlignment="center"
+            android:background="#CC000000"
+            android:inputType="number"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/phone_et"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phone_et"
+            app:layout_constraintTop_toBottomOf="@+id/name_et" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:background="#CC000000"
+            android:inputType="number"
+            android:minHeight="52dp"
+            android:textColor="@color/white"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_et" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="FOOD TYPE"
+            android:background="#CC000000"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_et" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/male_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_margin="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#CC000000"
+                android:checked="true"
+                android:text="VEG"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/female_rb"
+                android:layout_width="58dp"
+                android:layout_height="27dp"
+                android:layout_margin="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#CC000000"
+                android:text="NON-VEG"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Plates Quantity :"
+            android:textColor="#00FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/food_sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/food_sp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Spinner
+            android:id="@+id/food_sp"
+            android:layout_width="3dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="130dp"
+            android:scrollbarSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+
+            android:id="@+id/saveBtn"
+            android:layout_width="139dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="115dp"
+            android:background="@drawable/btn_round"
+            android:text="DONATE!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#CC546CF6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateBtn" />
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="182dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="112dp"
+            android:background="@drawable/btn_round"
+            android:text="Pickup Date"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#CC546CF6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

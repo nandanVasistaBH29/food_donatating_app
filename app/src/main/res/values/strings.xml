@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="about">HOW TO USE?</string>
+    <string name="aboutus">Food Share aims on eliminating hunger issue of India. We believe strongly in our motto that every individual, irrespective of their caste and age, must not sleep with an empty stomach. Food Share has partnered with restaurants, organizations and individuals like you who will help us in feeding hygenic food to the ones in need.\n\n<b>INSTRUCTIONS</b>\n\n<b>Step 1:</b> If your are a donor, add your details under the donor section\n\n<b>Step 2:</b> The donor can select the number of plates. By number of plates, the donor means that he is donating a food item like rice, wheat or such cereals, pulses, fruits or meat covering one full plate.\n\n<b>Step 3:</b> If you are some group/organization that is interested in distributing foods, hop onto the receiver section and request for donation through phone calls<br>\n\n          Developed by- Thanuja D         </br></string>
+    <string name="terms_and_conditions_text">By using our Food Share App, you agree to comply with the following terms and conditions.\nYou must be of legal age and have the capacity to enter into a binding agreement.\nIt is your responsibility to provide accurate information and ensure that donated food meets health and safety standards.\nThe App is intended for non-commercial use only, and you may not gain financial benefit from donated food.\nWe value your privacy and handle your personal information in accordance with our Privacy Policy.</string>
+</resources>

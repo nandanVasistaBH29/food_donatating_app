@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="bd.edu.rifat.foodDonationApp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sixthFragment"
+            app:destination="@id/sixthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="bd.edu.rifat.foodDonationApp.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+    <action
+        android:id="@+id/action_secondFragment_to_fifthFragment"
+        app:destination="@id/fifthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="bd.edu.rifat.foodDonationApp.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <argument
+            android:name="food"
+            app:argType="bd.edu.rifat.foodDonationApp.entities.Food"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="bd.edu.rifat.foodDonationApp.FourthFragment"
+        tools:layout="@layout/fragment_fourth"></fragment>
+
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="bd.edu.rifat.foodDonationApp.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth">
+        <action
+            android:id="@+id/action_fifthFragment_to_secondFragment"
+            app:destination="@id/fifthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sixthFragment"
+        android:name="bd.edu.rifat.foodDonationApp.SixthFragment"
+        tools:layout="@layout/fragment_sixth"></fragment>
+</navigation>
